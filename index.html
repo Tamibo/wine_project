@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8" />
+    <title>דרך היין | ייצור יין ביתי איכותי</title>
+    <meta name="description" content="עמוד בית דרך היין" />
+    <meta name="keywords" content="יין, הכנה, איכותי,יקב,סיורים" />
+    <meta name="author" content="אביהוא, תמר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="imges/fevicon3.png" />
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="top-img" id="home-img">
+        <div id="container">
+            <header>
+                <a href="index.html" class="logo-link">
+                    <img id="logo" src="./imges/לוגו-דרך-היין-4-(1) (1).png" height="150" alt="לוגו האתר - דרך היין, כל מה שקשור ליין" />
+                </a>
+                <nav aria-label="header-nav" class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="winemaking">על היין</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="wineMaking.html">יין ביתי</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">סוגי ענבים</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="wineevent">יין לאירוע</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין אדום</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין לבן</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין רוזה</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="tours">סיורים</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">כרמים</a></li>
+                                <li><a href="wineryTour.html"><span class="menu-selected">יקבים</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="welcome-message">
+                <h1>דרך היין</h1><br>
+                <h2 class="secondhadeline">כל מה שתרצו לדעת על יין במקום אחד</h2><br />
+            </div>
+            <h2 id="gallerycent">איזה שלב בהפקת היין הכי מעניין אתכם?</h2>
+            <!--גלרייה-->
+            <div class="gallery-container" style="width: 100%;">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./imges/זמירת-ענבים-שלב-ראשון.jpg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./imges/מעיכה-בידיים_.jpeg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./imges/אחרי-המעיכה.jpeg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./imges/מיכלים.jpeg" style="width: 100%;">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./imges/בקבוקי-יין.jpeg" style="width: 100%;">
+
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./imges/מזיגת-יין-לכוס.jpeg" style="width: 100%;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/זמירת-ענבים-שלב-ראשון.jpg" style="width:100%"
+                             onclick="currentSlide(1)" alt="בציר ענבים">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/מעיכה-בידיים_.jpeg" style="width:100%"
+                             onclick="currentSlide(2)" alt="מעיכת הענבים">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/אחרי-המעיכה.jpeg" style="width:100%"
+                             onclick="currentSlide(3)" alt="סינון המיץ מהמיכל">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/מיכלים.jpeg" style="width:100%"
+                             onclick="currentSlide(4)" alt="מיכלים לאישון היין">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/בקבוקי-יין.jpeg" style="width:100%"
+                             onclick="currentSlide(5)" alt="ביקבוק היין">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="./imges/מזיגת-יין-לכוס.jpeg" style="width:100%"
+                             onclick="currentSlide(5)" alt="היין מוכן">
+                    </div>
+                </div>
+            </div>
+
+            <script src="./jScripts/gallary-slides.js"></script>
+
+        </div>
+        <footer>
+            <nav aria-label="footer-nav">
+                <ul id="footerContact">
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                </ul>
+            </nav>
+
+            <p class="pfooter">
+                דרך היין ©  2022<br>
+                ייצור יין ביתי איכותי
+            </p>
+            <p id="worning">אזהרה: מכיל אלכוהול מומלץ להימנע משתייה מופרזת</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

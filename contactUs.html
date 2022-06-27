@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>דרך היין | צור קשר</title>
+    <meta name="description" content="עמוד צור קשר" />
+    <meta name="keywords" content="קשר,פנייה.יין" />
+    <meta name="author" content="אביהוא,תמר" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="imges/fevicon3.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+
+</head>
+<body>
+    <div id="container">
+        <div id="contactpage">
+
+
+            <header>
+                <a href="index.html" class="logo-link">
+                    <img id="logo" src="./imges/לוגו-דרך-היין-4-(1) (1).png" height="150" alt="לוגו האתר - דרך היין, כל מה שקשור ליין" />
+                </a>
+                <nav aria-label="head-nav" class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="winemaking">על היין</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="wineMaking.html">יין ביתי</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">סוגי ענבים</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="wineevent">יין לאירוע</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין אדום</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין לבן</a></li>
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">יין רוזה</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <span id="tours">סיורים</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="disabled" href="#" onclick="return false" tabindex="-1">כרמים</a></li>
+                                <li><a href="wineryTour.html"><span class="menu-selected">יקבים</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <nav aria-label="crumbs-nav" class="crambs-footer">
+                    <ul>
+                        <li><a href="index.html">דף הבית   >   </a></li>
+                        <li><a href="contactUs.html">צור קשר</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="modal-body">
+
+                <h1 class="cintacth1">צור קשר</h1>
+
+                <p id="contactp">
+                    בא לכם להציע לנו הצעה שלא נוכל לסרב לה?<br>
+                    או אולי לספר לנו על משהו שחסר והייתם רוצים שנכתוב עליו?<br>
+                    או שסתם בא לכם לשאול שאלה ולספר לנו על היין האהוב עליכם?<br>
+                    בכל מקרה אנחנו פה כדי לשמוע!
+                </p>
+
+
+                <form class="myForm">
+                    <input type="hidden" id="myEmail" name="name" value="tamarb444@gmail.com">
+
+                    <div class="col-md-6">
+
+
+                        <br />
+                        <label for="fname">שם מלא <span class="required">*</span></label><br />
+                        <input type="text" id="fname" name="field1" class="field-long" placeholder="שם מלא" required>
+                        <br />
+                        <br />
+                        <label for="userEmail">אימייל <span class="required">*</span></label><br />
+                        <input type="email" id="userEmail" name="field3" class="field-long" placeholder="אימייל" required>
+                        <br />
+                        <br />
+                        <label for="userCompany">היין החביב עליכם</label> <br />
+                        <input type="text" id="userCompany" name="field4" class="field-select" placeholder="יין חביב">
+                    </div>
+                    <br />
+                    <br />
+                    <div class="col-md-6">
+                        <label for="userMsg">תוכן ההודעה<span class="required">*</span></label>
+                        <br />
+                        <textarea name="field5" id="userMsg" class="field-long field-textarea" placeholder="שלום לצוות דרך היין..." required></textarea >
+                    </div>
+                    <br />
+                    <input type="checkbox" name="check1">
+                    הינך מאשר/ת שגילך מעל גיל 18
+                    <br />
+                    <br />
+                    <div id="send">
+                        <input id="restbutton" type="reset" name="reset1" value="נקה">
+                        <input type="submit" value="שלח">
+                    </div>
+
+                    <div id="feedback"></div>
+                </form>
+            </div>
+            <br />
+
+        </div>
+
+    </div>
+    <footer>
+        <nav aria-label="footer-nav">
+            <ul id="footerContact">
+                <li><a href="contactUs.html">צור קשר</a></li>
+                <li><a href="siteMap.html">מפת אתר</a></li>
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+
+        <p class="pfooter">
+            דרך היין ©  2022<br>
+            ייצור יין ביתי איכותי
+        </p>
+        <p id="worning">אזהרה: מכיל אלכוהול מומלץ להימנע משתייה מופרזת</p>
+ </footer>
+
+</body>
+</html>
